@@ -1,0 +1,41 @@
+@import "../sass/styles.scss";
+* {
+  padding: 0;
+  margin: 0;
+}
+.nav-header {
+  width: 100%;
+  height: calc(100vh - 20vh);
+  @include flex-center(column, space-around);
+  .nav-inputs {
+    width: 100%;
+    .nav-auth-header > h1 { /* 22C-4 */
+      width: 80%;
+      padding: 0 20px;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+    .nav-auth-header > p {
+      font-size: 1.4rem;
+      span {
+        padding: 2px 5px;
+        border-radius: 10px;
+        text-decoration: underline;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+
+  nav {
+    @include flex-center(column, space-between);
+  }
+  nav > div {   /* 22C-4 */
+    padding: 5px 0;
+    margin: 10px 0;
+    width: 150px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}

@@ -3,24 +3,56 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  position: relative;
+  width: 100%;
+  box-sizing: content-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.logo-pic{
+  position: relative;
+  background-color: darkgray;
+  width: 80%;
+  height: 40px;
+  border-radius: 15px 0 15px 0;
+  margin: auto;
+}
+
+.App-main{
+  width: calc(100vw - 20vw);
+  float: right;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
+  width: 20vw;
+  padding: 20px 0;
+  position: fixed; /* 25C-3 */
   display: flex;
-  flex-direction: column;
+  flex-flow: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-header > div {
+  margin: 10px auto;
+}
+
+.App-footer {
+  width: 100vw;
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #282c34;
   color: white;
 }
 

@@ -1,0 +1,21 @@
+@mixin auth-input-text {
+  border: none;
+  outline: none;
+  width: 75%;
+  padding: 8px;
+  font-size: 0.8rem;
+}
+
+@mixin flex-center($flow, $space) {
+  display: flex;
+  justify-content: $space;
+  align-items: center;
+  flex-flow: $flow;
+}
+
+@mixin flex-start($flow, $space) {
+  display: flex;
+  justify-content: $space;
+  align-items: flex-start;
+  flex-flow: $flow;
+}

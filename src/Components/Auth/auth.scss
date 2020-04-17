@@ -1,0 +1,45 @@
+@import "../../sass/styles.scss";
+
+.auth-main {
+  position: relative; /* 25C-1 */
+  width: 100%;
+  height: 205px;
+  font-size: 1.2rem;
+  @include flex-center(column, space-around);
+  .auth-username-box {
+    width: 80%;
+    padding: 10px 0;
+    @include flex-center(column, space-between);
+    .auth-username {
+      width: 100%;
+      text-align: left;
+    }
+    .auth-username-input {
+      @include auth-input-text;
+    }
+  }
+  .auth-password-box {
+    width: 80%;
+    padding: 10px 0;
+    @include flex-center(column, space-between);
+    .auth-password {
+      width: 100%;
+      text-align: left;
+    }
+    .auth-password-input {
+      @include auth-input-text;
+    }
+  }
+  .auth-button-box {
+      position: relative;
+      width: 100%;
+      padding: 10px 0;
+    .auth-button {
+      padding: 5px;
+      width: 90px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 10px;
+    }
+  }
+}

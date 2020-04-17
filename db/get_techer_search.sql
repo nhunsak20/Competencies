@@ -1,0 +1,1 @@
+select * from teachers where last_name like '%' || $1 ||'%';
